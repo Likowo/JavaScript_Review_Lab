@@ -1,5 +1,6 @@
 /* 
-A. Q + A
+I. Variables & Datatypes
+//A. Q + A
 1.How do we assign a value to a variable?
 Ans: Assignment operator (=)
 2.How do we change the value of a variable?
@@ -114,6 +115,12 @@ console.log(48 == '48')
 
 // E. Driver's Ed
 // Make a variable that holds a person's age; be semantic
+let fansAge = ""
 // Write code that will print out "Here are the keys!", if the age is 16 years or older, or, if the age is younger than 16, a message should print "Sorry, you're too young."
+if(fansAge >= 16){
+    console.log("Here are the keys")
+}else{
+    console.log("Sorry,you're too young")
+}
 
 
