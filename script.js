@@ -44,11 +44,11 @@ Ans: 90% thinking and 10% coding
 
 //7. Create a variable called yourNameand set it equal to your name as a string. Then, write an expression that takes the string "Hello, my name is " and the variable yourNameso that it returns a new string with them concatenated.
 Ans: let yourName = "Ann";
-     let expression = "Hello, my name is "; **/
+     let expression = "Hello, my name is "; 
    //  Now Concatenate using the + sign
     let introduction = expression + yourName
                         = Hello, my name is Ann
-       console.log(introduction) */ 
+       console.log(introduction) 
 
 
 // ex: Hello, my name is Jean Valjean
@@ -57,27 +57,33 @@ Ans: let yourName = "Ann";
 // C. Booleans
 // Using the provided variable definitions, replace the blanks so that all log statements print truein the console. Answers should be all be valid JS syntax and not weird things that don't make sense but happen to print trueto the console
 
-// const a = 4;
-// const b = 53;
-// const c = 57;
-// const d = 16;
-// const e = 'Kevin';
+ const a = 4;
+ const b = 53;
+ const c = 57;
+ const d = 16;
+ const e = 'Kevin';
 
-// console.log(a __ b);
-// Ans: console.log(a __ b);
+//1. console.log(a __ b);
  console.log(a<b)
-// console.log(c __ d);
-console.log(c>b)
-// console.log('Name' __ 'Name');
+//2. console.log(c __ d);
+console.log(c>d)
+//3. console.log('Name' __ 'Name');
 console.log('name'==='name')
 // // FOR THE NEXT TWO, USE ONLY && OR ||
-// console.log(true __ false);
-// console.log(false __ false __ false __ false __ false __ true);
-// console.log(false __ false)
-// console.log(e ___ 'Kevin');
-// console.log(a __ b ___ c); // note: a < b < c is NOT CORRECT (and is not a valid JS expression, think about using other math operations)
-// console.log(a __ a ___ d); // note: the answer is a simple arithmetic equation, not something "weird"
-// console.log(48 __ '48');
+//4. console.log(true __ false);
+console.log(true || false)
+//5. console.log(false __ false __ false __ false __ false __ true);
+console.log(false && false && false && false && false || true)
+//6. console.log(false __ false)
+console.log(false === false) // i.e the word false is of equal value and equal type (===) to the word false
+//7. console.log(e ___ 'Kevin');
+console.log(e !== 'Kevin') //i,e the letter (e) is not of equal value or not equal type (symbolized by !==) to the string ('Kevin')
+//8. console.log(a __ b ___ c); // note: a < b < c is NOT CORRECT (and is not a valid JS expression, think about using other math operations)
+console.log(a + b === c) // i.e 4(a) + 53(b) = 57 which is of equal value and equal type ( symbolized by ===) to 57(c)
+//9. console.log(a __ a ___ d); // note: the answer is a simple arithmetic equation, not something "weird"
+console.log(a * a === d)
+//10. console.log(48 __ '48');
+console.log(48 == '48')
 
 /*  
 
