@@ -85,18 +85,35 @@ console.log(a * a === d)
 //10. console.log(48 __ '48');
 console.log(48 == '48')
 
-/*  
+  
 
-D. The farm
-Declare a variable animal. Set it to be either "cow" or something else
-Write code that will print out "mooooo" if the it is equal to cow
-Change your code so that if the variable animalis anything other than a cow, it will print "Hey! You're not a cow."
-Commit
+// D. The farm
+// Declare a variable animal. Set it to be either "cow" or something else
+    let animal = "cow"
+// Write code that will print out "mooooo" if the it is equal to cow
+  //Ans: Use the if else Statement/Syntax i.e  if(condition1){}else
+    let sound = "mooooo"
+    if(animal = "cow"){
+         sound = "mooooo"
+    } console.log(sound)
+// Change your code so that if the variable animalis anything other than a cow, it will print "Hey! You're not a cow."
+   //Ans: Use the if else Statement i.e 
+    // if(condition1){
+       //           block of code to be executed if condition1 is true
+      //             }else{
+       //                   block of code to be executed if condition1 is false
+    //                     }
+    if(animal = "cow"){
+         sound = "mooooo"
+    }else{
+        console.log( "Hey! You're not a cow")
+    }
+// Commit
 
 
 
-E. Driver's Ed
-Make a variable that holds a person's age; be semantic
-Write code that will print out "Here are the keys!", if the age is 16 years or older, or, if the age is younger than 16, a message should print "Sorry, you're too young."
-*/
+// E. Driver's Ed
+// Make a variable that holds a person's age; be semantic
+// Write code that will print out "Here are the keys!", if the age is 16 years or older, or, if the age is younger than 16, a message should print "Sorry, you're too young."
+
 
