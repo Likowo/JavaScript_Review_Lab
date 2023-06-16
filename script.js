@@ -44,11 +44,11 @@ Ans: 90% thinking and 10% coding
 //Ans: Number
 
 //7. Create a variable called yourNameand set it equal to your name as a string. Then, write an expression that takes the string "Hello, my name is " and the variable yourNameso that it returns a new string with them concatenated.
-Ans: let yourName = "Ann";
+ let yourName = "Ann";
      let expression = "Hello, my name is "; 
    //  Now Concatenate using the + sign
     let introduction = expression + yourName
-                        = Hello, my name is Ann
+                        // = Hello, my name is Ann
        console.log(introduction) 
 
 
@@ -97,7 +97,7 @@ console.log(48 == '48')
     if(animal = "cow"){
          sound = "mooooo"
     } console.log(sound)
-// Change your code so that if the variable animalis anything other than a cow, it will print "Hey! You're not a cow."
+// Change your code so that if the variable animalis anything other than a cow, it will print (i.e.console.logs) "Hey! You're not a cow."
    //Ans: Use the if else Statement i.e 
     // if(condition1){
        //           block of code to be executed if condition1 is true
@@ -116,7 +116,7 @@ console.log(48 == '48')
 // E. Driver's Ed
 // Make a variable that holds a person's age; be semantic
 let fansAge = ""
-// Write code that will print out "Here are the keys!", if the age is 16 years or older, or, if the age is younger than 16, a message should print "Sorry, you're too young."
+// Write code that will print out "Here are the keys!", if the age is 16 years or older, or, if the age is younger than 16, a message should print (i.e.console.logs) "Sorry, you're too young."
 if(fansAge >= 16){
     console.log("Here are the keys")
 }else{
@@ -138,39 +138,51 @@ This is GOOD: for(let i = 0; i < 100; i++){code to be executed}
 This is NO GOOD: for(i = 0; i < 100; i++) **/
 
 // A. The basics
-// Write a loop that will print out all the numbers from 0 to 10, inclusive
-  Ans:for(let i = 0; i<=10,i++){
+//1. Write a loop that will print out (i.e.console.logs) all the numbers from 0 to 10, inclusive
+  for(let i = 0; i<=10;i++){
      console.log(i)
      }
   
-// Write a loop that will print out all the numbers from 10 up to and including 400
-     Ans: for(let i = 10; i<=400; i++){
-           System.out.println(i)
+// 2.Write a loop that will print out (i.e.console.logs) all the numbers from 10 up to and including 400
+    for(let i = 10; i<=400; i++){
+           console.log(i)
         }
-// Write a loop that will print out every third number starting with 12 and going no higher than 4000
-  Ans: //Use oddEven synthax and Modulo Operator
-      
-   let number = 12;
-   System.out.println('odd')
-   System.out.println('even')
-
-
-
+// 3.Write a loop that will print out (i.e.console.logs) every third number starting with 12 and going no higher than 4000
+  
+  // for(let i = 12; i<=4000; i+=3){
+  //   console.log(i)
+  // }
+  
 // B. Get even
-// Print out the numbers that are within the range of 1 - 100
-// Adjust your code to add a message next to even numbers only that says: "<-- is an even number"
-
+// 1.Print out (i.e.console.logs) the numbers that are within the range of 1 - 100
+for(let i = 1; i <=100; i++){
+   console.log(i)
+}
+// 3.Adjust your code to add a message next to even numbers only that says: "<-- is an even number"
+for(let i = 1; i <= 100; i++){
+  if(i % 2 === 0){
+    console.log(`${i} <-- is an even number `)
+  }else{
+    console.log(i)
+  }
+}
 
 
 // C. Give me Five
-// For the numbers 0 - 100, print out "I found a number. High five!" if the number is a multiple of five
+//1. For the numbers 0 - 100, print out (i.e.console.logs) "I found a number. High five!" if the number is a multiple of five
 // Example Output:
-
 // I found a 5. High five!
 // I found a 10. High five!
+for(let i = 0; i <= 100; i++){
+  if(i % 5 === 0){
+    console.log(i + `I found a number.High five`)
+   }else {
+    console.log(i)
+   }
+}
 
 
-// Add to the code from above to print out "I found a number. Three is a crowd" if the number is a multiple of three
+//1. Add to the code from above to print  (i.e.console.logs) out "I found a number. Three is a crowd" if the number is a multiple of three
 // Example Output:
 
 // I found a 3. Three is a crowd
@@ -178,18 +190,189 @@ This is NO GOOD: for(i = 0; i < 100; i++) **/
 // I found a 6. Three is a crowd
 // I found a 9. Three is a crowd
 // I found a 10. High five!
+for(let i = 0; i <= 100; i++){
+  if(i % 3 === 0){
+    console.log(i + `  I found a number. Three is a crowd`)
+  }
+}
 
 
-// For numbers divisible by both three and five, be sure your code prints both messages
-
-
+//1. For numbers divisible by both three and five, be sure your code prints (i.e.console.logs) both messages
+//NB: Numbers divisible by both 3 and 5 from 1 to 100 are;15,30,45,60,75 and 90 ( this should be your result in the terminal when you console.log)
+let i
+for(let i = 1; i<= 100; i++){
+ if(i%3 === 0 && i%5 ===0){
+  console.log(i)
+ }
+}
 
 // D. Savings account
-// Write code that will save the sum of all the numbers between 1 - 10 to a variable called bank_account.
+// 1.Write code that will save the sum of all the numbers between 1 - 10 to a variable called bank_account.
 // Check your work! Your bank_account should have $55 in it.
+let sum = 0
+for(let i = 1; i <= 10; i++ ){
+ sum += i ;
+} console.log('bank_account', sum);
 
-// You got a bonus! Your pay is now doubled each week. Write code that will save the sum of all the numbers between 1 - 100 multiplied by 2.
+// const numSum = (n) => n * (n+1) / 2;
+
+
+//2. You got a bonus! Your pay is now doubled each week. Write code that will save the sum of all the numbers between 1 - 100 multiplied by 2.
 // Check your work! Your bank_account should have $10,100 in it.
+let newSum = 0
+for(let i = 1; i <= 100; i++ ){
+ newSum += i * 2 ;
+} console.log('bank_account', newSum);
+
+//* 
+// III. Arrays & Control flow
+
+// A. Talk about it:
+// What are the things in an array called? ===> The things in an array are called Values
+     //Def: An array is a special variable, which can hold more than one value:
+// Do Arrays guarantee those things will be in order? ===> No
+// What real-life thing could you model with an array? ===> Type of cars
+
+// B. Easy Does It
+// Create an array that contains three quotes and store it in a variable called quotes
+const  quotes = ["quote0","quote1","quote3"]
+
+
+// C. Accessing elements
+// Given the following array, const randomThings = [1, 10, "Hello", true]
+//1. How do you access the 1st element in the array?
+ const randomThings =  [1, 10, "Hello", true]
+  let randomThing = randomThings[0] // Returns the vaule of the first element, which is 1 // You access an array element by referring to the index number: Array indexes start with number zero i.e [0,1,2,3,4,5..].
+ //Thus number 1 is standing in the index number position [0] which is the first element in the array
+
+//2. Change the value of "Hello"to "World"
+//"Hello" is standing in the index number position 2
+ randomThings[2] = "World";
+
+//3. Check the value of the array to make sure it updated the array. How? Why, yes! console.log();
+console.log(randomThings)
+
+
+// D. Change values
+// Given the following array const ourClass = ["Salty", "Zoom", "Sardine", "Slack", "Github"]
+// 1.What would you write to access the 3rd element of the array?
+const ourClass = ["Salty", "Zoom", "Sardine", "Slack", "Github"]
+ourClass[3] //  Counting from zero(0), the 3rd element of the array is "Slack"
+// 2.Change the value of "Github" to "Octocat"
+ourClass[4] = "Octocat" //Github is on index number position 4
+
+//3.Add a new element, "Cloud City" to the array
+ourClass.length // Returns the number of elements
+ourClass.push("Cloud City")  // Use the push() method to add a new element to an array
+console.log(ourClass)
+
+//let newElement = "Cloud City"
+//ourClass[5] = newElement//
+
+
+// E. Mix It Up
+// Note: You don't really need .splice()for these. You could use it, but there are simpler array methods that are more appropriate.
+// Given the following array: const myArray = [5, 10, 500, 20]
+
+//    1.Add the string "Aegon"to the end of the array. Add another string of your choice to the end of the array.
+const myArray = [5, 10, 500, 20]
+myArray.push("Aegon") // Use the push() method to add a new element to an array
+myArray.push("Money")  // Use the push() method to add a new element to an array
+
+//    2.Remove the 5 from the beginning of the array.
+myArray.shift(5) // The Shift() method removes the first element of an array:
+
+//    3.Add the string "Bob Marley" to the beginning of the array.
+myArray.unshift("Bob Marley")  // The unshift() method adds new elements to the beginning of an array.
+
+//   4. Remove the string of your choice from the end of the array.
+myArray.pop("Money") // The pop() method removes (pops) the last element of an array.
+
+//   5. Reverse this array using Array.prototype.reverse(). Did you mutate the array? What does mutate mean? Did the .reverse()method return anything?
+// myArray.reverse()
+// myArray.prototype.reverse() 
+// console.log(myArray)
+
+// ===> Yes the array was mutated.Mutations happen when we change a JavaScript object or array without creating a new variable or reassigning an existing one.
+//===> Yes The reverse() method reverses the order of the elements in an array.
+
+
+
+
+// F. Biggie Smalls
+// Create a variable that contains an integer.
+let catsAge = 2
+
+// Write an if ... elsestatement that:
+  // console.log()s "little number" if the number is entered is less than 100
+  // console.log()s big number if the number is greater than or equal to 100.
+  if(catsAge < 100){
+    console.log( "little number");
+  }else{
+    console.log("big number");
+  }
+
+
+
+// G. Monkey in the Middle
+
+// Write an if ... else if ... elsestatement:
+// console.log()little number if the number entered is less than 5.
+// If the number entered is more than 10, log big number.
+// Otherwise, log "monkey".
+let fingers = 6
+if(fingers < 5){
+  console.log( "little number");
+}else if(fingers>10){
+  console.log("big number");
+}else{
+  console.log("monkey");
+}
+
+// H. What's in Your Closet?
+// Below, we've given you examples of Kristyn and Thom's closets modeled as data in JavaScript.
+
+// const kristynsCloset = [
+//   "left shoe",
+//   "cowboy boots",
+//   "right sock",
+//   "Per Scholas hoodie",
+//   "green pants",
+//   "yellow knit hat",
+//   "marshmallow peeps"
+// ];
+
+// // Thom's closet is more complicated. Check out this nested data structure!!
+// const thomsCloset = [
+//   [
+//     // These are Thom's shirts
+//     "grey button-up",
+//     "dark grey button-up",
+//     "light blue button-up",
+//     "blue button-up",
+//   ],[
+//     // These are Thom's pants
+//     "grey jeans",
+//     "jeans",
+//     "PJs"
+//   ],[
+//     // Thom's accessories
+//     "wool mittens",
+//     "wool scarf",
+//     "raybans"
+//   ]
+// ];
+
+// 1.What's Kristyn wearing today? Using bracket notation to access items in kristynsCloset, log the sentence "Kristyn is rocking that " + the third item in Kristyn's closet + " today!" to the console.
+//2. Kristyn just bought some sweet shades! Add "raybans"to her closet after "yellow knit hat".
+//3. Kristyn spilled coffee on her hat... modify this item to read "stained knit hat"instead of yellow.
+//4. Put together an outfit for Thom! Using bracket notation, access the first element in Thom's shirtsarray.
+// 5.In the same way, access one item from Thom's pants array.
+// 6.Access one item from Thom's accessories array.
+// 7.Log a sentence about what Thom's wearing. Example: "Thom is looking fierce in a grey button-up, jeans and wool scarf!"
+//8. Get more specific about what kind of PJs Thom's wearing this winter. Modify the name of his PJ pants to Footie Pajamas.
+
+
 
 
 
