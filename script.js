@@ -446,33 +446,119 @@ console.log(getTwoLengths("Hank", "Hippopopalous"));
 // F. getMultipleLengths
 // Write a function getMultipleLengths that accepts a single parameter as an argument: an array of strings. The function should return an array of numbers where each number is the length of the corresponding string.
 
-const getMultipleLengths = (string1,string2,string3,string4,string5) => {
-  let getMultipleLengths = [string1.length,string2.length,string3.length,string4.length,string5.length]
-  return getMultipleLengths 
+ const getMultipleLengths = (arrOfStrings) => {
+   let multipleLengths = []
+  for( let i = 0; i < arrOfStrings.length; i++ ){
+    multipleLengths.push(arrOfStrings[i].length)
+  }
+ return multipleLengths
 }
- console.log(getMultipleLengths(["hello", "what", "is", "up", "dude"]));
+
+  console.log(getMultipleLengths(["hello", "what", "is", "up", "dude"]));
 // => [5, 4, 2, 2, 4]
 
-
-
-
 // G. maxOfThree
-// Define a function maxOfThreethat takes three numbers as arguments and returns the largest of them. If all numbers are the same, it doesn't matter which one is returned. If the two largest numbers are the same, one of them should be returned. Be sure to test it with larger values in each of the three locations.
+// Define a function maxOfThree that takes three numbers as arguments and returns the largest of them. If all numbers are the same, it doesn't matter which one is returned. If the two largest numbers are the same, one of them should be returned. Be sure to test it with larger values in each of the three locations.
+const maxOfThree = (num1,num2,num3) => {
+ if(num1=== num2 && num2 === num1){
+  return num1 
+ } else if (
+  num2 >= num1 && num1 >= num3
+ ){
+  return num2
+ }
+  
+}
 
-// console.log(maxOfThree(6, 9, 1));
+ console.log(maxOfThree(6, 9, 1));
+ console.log(maxOfThree(15, 9, 1));
+ console.log(maxOfThree(6, 9, 25));
 // => 9
 
 // Did you use Google and find Math.max()? If so, great job! Very resourceful—keep looking stuff up! However, for this particular question, we need you to submit a solution that does not use Math.max().
 
-
-
-
 // H. printLongestWord
-// Write a function printLongestWordthat accepts a single argument, an array of strings. The method should return the longest word in the array. In case of a tie, the method should return the word that appears first in the array.
+// Write a function printLongestWord that accepts a single argument, an array of strings. The method should return the longest word in the array. In case of a tie, the method should return the word that appears first in the array.
+ const printLongestWord = (arrayOfStr) => {
+  let longestWord = " "
+  for( let i = 0; i < arrayOfStr.length; i++){
+    if( arrayOfStr[i].length > longestWord.length){
+      longestWord = arrayOfStr[i]
+    }
+  }
+    return longestWord
+}
 
-// console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "Todd"]));
+ console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "Todd"]));
 // => "Peanutbutter"
 
+
+
+
+// Objects
+// Let's set up an object data structure. Let's say we have a website that sells products, and we have a user of our website, and we want to store that user's data. The object data structure is a good way to organize the data from our user.
+
+// A. Make a user object
+// Create an object called user.
+// Write in to the object the key-value pairs for name, email, age, and purchased. Set the value of purchased to an empty array []. Set the other values to whatever you would like.
+
+
+
+// B. Update the user
+// Our user has changed his or her email address. Without changing the original userobject, update the emailvalue to a new email address.
+// Our user has had a birthday! Without changing the original userobject, increment the agevalue using the postfix operator. Hint: age++
+
+
+
+// C. Adding keys and values
+// You have decided to add your user's location to the data that you want to collect.
+
+// Without changing the original userobject, add a new key locationto the object, and give it a value or some-or-other location (a string).
+
+
+
+// D. Shopaholic!
+// Our user has purchased an item! They have purchased some "carbohydrates". Using .push(), add the string "carbohydrates" to the purchasedarray.
+// Our user has purchased an item! They have purchased some "peace of mind". Using .push(), add the string "peace of mind" to the purchasedarray.
+// Our user has purchased an item! They have purchased some "Merino jodhpurs". Using .push(), add the string "Merino jodhpurs" to the purchasedarray.
+// Console.log just the "Merino jodhpurs" from the purchasedarray.
+
+
+
+// E. Object-within-object
+// Remember that you can add an object to an existing object in the same way that you can add any new property/value pair.
+
+// If we want to give our user a friendwith a nameand age, we could write:
+
+// user.friend = {
+//     name: "Grace Hopper",
+//     age: 85
+// }
+// When we console.log user, we would see the friendobject added to our user object.
+
+// Write a friendobject into your userobject and give the friend a name, age, location, and purchased array (empty for now)
+// Console.log just the friend's name
+// Console.log just the friend's location
+// CHANGE the friend's age to 55
+// The friendhas purchased "The One Ring". Use .push()to add "The One Ring" to the friend's purchasedarray.
+// The friendhas purchased "A latte". Use .push()to add "A latte" to the friend's purchasedarray.
+// Console.log just "A latte" from the friend's purchasedarray.
+
+
+
+// F. Loops
+// Write a for loop that iterates over the User's purchasedarray (NOT the friend's purchased array), and prints each element to the console.
+// Write a for loop that iterates over the Friend's purchasedarray, and prints each element to the console.
+
+
+
+// G. Functions can operate on objects
+// Write a single function updateUserthat takes no parameters. When the function is run, it should:
+// it should increment the user's age by 1
+// make the user's name uppercase
+// The function does not need a returnstatement, it will merely modify the user object.
+
+// Write a function oldAndLoudthat performs the exact same tasks as updateUser, but instead of hard-coding it to only work on our userobject, make it take a parameter person, and have it modify the object that is passed in as an argument when the function is called. Call your oldAndLoudfunction with useras the argument.
 
 
 
