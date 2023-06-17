@@ -139,14 +139,14 @@ This is NO GOOD: for(i = 0; i < 100; i++) **/
 
 // A. The basics
 //1. Write a loop that will print out (i.e.console.logs) all the numbers from 0 to 10, inclusive
-  for(let i = 0; i<=10;i++){
-     console.log(i)
-     }
+  // for(let i = 0; i<=10;i++){
+  //    console.log(i)
+  //    }
   
 // 2.Write a loop that will print out (i.e.console.logs) all the numbers from 10 up to and including 400
-    for(let i = 10; i<=400; i++){
-           console.log(i)
-        }
+    // for(let i = 10; i<=400; i++){
+    //        console.log(i)
+    //     }
 // 3.Write a loop that will print out (i.e.console.logs) every third number starting with 12 and going no higher than 4000
   
   // for(let i = 12; i<=4000; i+=3){
@@ -155,17 +155,17 @@ This is NO GOOD: for(i = 0; i < 100; i++) **/
   
 // B. Get even
 // 1.Print out (i.e.console.logs) the numbers that are within the range of 1 - 100
-for(let i = 1; i <=100; i++){
-   console.log(i)
-}
+// for(let i = 1; i <=100; i++){
+//    console.log(i)
+// }
 // 3.Adjust your code to add a message next to even numbers only that says: "<-- is an even number"
-for(let i = 1; i <= 100; i++){
-  if(i % 2 === 0){
-    console.log(`${i} <-- is an even number `)
-  }else{
-    console.log(i)
-  }
-}
+// for(let i = 1; i <= 100; i++){
+//   if(i % 2 === 0){
+//     console.log(`${i} <-- is an even number `)
+//   }else{
+//     console.log(i)
+//   }
+// }
 
 
 // C. Give me Five
@@ -173,13 +173,13 @@ for(let i = 1; i <= 100; i++){
 // Example Output:
 // I found a 5. High five!
 // I found a 10. High five!
-for(let i = 0; i <= 100; i++){
-  if(i % 5 === 0){
-    console.log(i + `I found a number.High five`)
-   }else {
-    console.log(i)
-   }
-}
+// for(let i = 0; i <= 100; i++){
+//   if(i % 5 === 0){
+//     console.log(i + `I found a number.High five`)
+//    }else {
+//     console.log(i)
+//    }
+// }
 
 
 //1. Add to the code from above to print  (i.e.console.logs) out "I found a number. Three is a crowd" if the number is a multiple of three
@@ -190,21 +190,21 @@ for(let i = 0; i <= 100; i++){
 // I found a 6. Three is a crowd
 // I found a 9. Three is a crowd
 // I found a 10. High five!
-for(let i = 0; i <= 100; i++){
-  if(i % 3 === 0){
-    console.log(i + `  I found a number. Three is a crowd`)
-  }
-}
+// for(let i = 0; i <= 100; i++){
+//   if(i % 3 === 0){
+//     console.log(i + `  I found a number. Three is a crowd`)
+//   }
+// }
 
 
 //1. For numbers divisible by both three and five, be sure your code prints (i.e.console.logs) both messages
 //NB: Numbers divisible by both 3 and 5 from 1 to 100 are;15,30,45,60,75 and 90 ( this should be your result in the terminal when you console.log)
-let i
-for(let i = 1; i<= 100; i++){
- if(i%3 === 0 && i%5 ===0){
-  console.log(i)
- }
-}
+// let i
+// for(let i = 1; i<= 100; i++){
+//  if(i%3 === 0 && i%5 ===0){
+//   console.log(i)
+//  }
+// }
 
 // D. Savings account
 // 1.Write code that will save the sum of all the numbers between 1 - 10 to a variable called bank_account.
@@ -368,20 +368,20 @@ if(fingers < 5){
 //2. Kristyn just bought some sweet shades! Add "raybans"to her closet after "yellow knit hat".
      //*** */ kristynsCloset.splice(6,0,"raybans")
 //3. Kristyn spilled coffee on her hat... modify this item to read "stained knit hat"instead of yellow.
-kristynsCloset(5) = "stained knit hat"
-console.log(kristynsCloset)
+// kristynsCloset(5) = "stained knit hat"
+// console.log(kristynsCloset)
 //4. Put together an outfit for Thom! Using bracket notation, access the first element in Thom's shirtsarray.
-thomsCloset[0][0]
-console.log(shirt)
+// thomsCloset[0][0]
+// console.log(shirt)
 // 5.In the same way, access one item from Thom's pants array.
-let pants = thomsCloset[1][0]
+// let pants = thomsCloset[1][0]
 // 6.Access one item from Thom's accessories array.
-let accessories = thomsCloset[2][2]
+// let accessories = thomsCloset[2][2]
 // 7.Log a sentence about what Thom's wearing. Example: "Thom is looking fierce in a grey button-up, jeans and wool scarf!"
-console.log(`Thom is looking fierce in a ${shirt},${pants}, and ${accessories}`)
+// console.log(`Thom is looking fierce in a ${shirt},${pants}, and ${accessories}`)
 //8. Get more specific about what kind of PJs Thom's wearing this winter. Modify the name of his PJ pants to Footie Pajamas.
-thomsCloset[1][2] = " Footie Pajamas"
-console.log(thomsCloset)
+// thomsCloset[1][2] = " Footie Pajamas"
+// console.log(thomsCloset)
 
 
 
@@ -399,49 +399,58 @@ console.log(thomsCloset)
 
 
 // B. printCool
-// Write a function printCoolthat accepts one parameter, nameas an argument. The function should print the name and a message saying that that person is cool.
+// Write a function printCool that accepts one parameter, name as an argument. The function should print the name and a message saying that, that person is cool.
+ //Ans: First create the function using the Arrow Function with function name printCool
 const printCool = (name) => {
-  console.log(`${name} is cool`)
+  console.log(name, "is cool" )
 }
-printCool ("captain Reynolds")
-
-// console.log(printCool("Captain Reynolds"));
-// => "Captain Reynolds is cool";
-
-
-
+printCool("Mary Jay")
 
 // C. calculateCube
-// Write a function calculateCubethat takes a single number and prints the volume of a cube made from that number.
+// Write a function calculateCube that takes a single number and prints the volume of a cube made from that number.
+const calculateCube = (interger) => {
+  console.log(interger*interger*interger)
+}
+calculateCube(3)
 
-// console.log(calculateCube(5));
-// => 125
-
-
-
+console.log(calculateCube(5));
+// 125
 
 // D. isVowel
-// Write a function isVowelthat takes a character (i.e. a string of length 1) and returns true if it is a vowel, false otherwise. The vowel could be upper or lower case. Test your function on every vowel and make sure it's working. In general, when you write functions, take a minute to test them with different values to make sure they behave the way you want.
-
+// Write a function isVowel that takes a character (i.e. a string of length 1) and returns true if it is a vowel, false otherwise. The vowel could be upper or lower case. Test your function on every vowel and make sure it's working. In general, when you write functions, take a minute to test them with different values to make sure they behave the way you want.
 // console.log(isVowel("a"));
 // => true
-
-
-
+const isVowel = (string) => {
+  let isVowel = "aeiouy"
+ if(isVowel.includes(string)){
+  return true
+ }else {
+  return false
+ }
+} 
+console.log(isVowel("a"))
+console.log(isVowel("v"))
+console.log(isVowel("y"))
 
 // E. getTwoLengths
 // Write a function getTwoLengthsthat accepts two parameters (strings). The function should return an array of numbers where each number is the length of the corresponding string.
+const getTwoLengths = (string1,string2) => {
+  let getTwoLengths = [string1.length,string2.length]
+  return getTwoLengths
+}
 
-// console.log(getTwoLengths("Hank", "Hippopopalous"));
+console.log(getTwoLengths("Hank", "Hippopopalous"));
 // => [4, 13]
 
 
-
-
 // F. getMultipleLengths
-// Write a function getMultipleLengthsthat accepts a single parameter as an argument: an array of strings. The function should return an array of numbers where each number is the length of the corresponding string.
+// Write a function getMultipleLengths that accepts a single parameter as an argument: an array of strings. The function should return an array of numbers where each number is the length of the corresponding string.
 
-// console.log(getMultipleLengths(["hello", "what", "is", "up", "dude"]));
+const getMultipleLengths = (string1,string2,string3,string4,string5) => {
+  let getMultipleLengths = [string1.length,string2.length,string3.length,string4.length,string5.length]
+  return getMultipleLengths 
+}
+ console.log(getMultipleLengths(["hello", "what", "is", "up", "dude"]));
 // => [5, 4, 2, 2, 4]
 
 
