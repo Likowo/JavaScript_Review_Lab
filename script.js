@@ -3,16 +3,21 @@ I. Variables & Datatypes
 //A. Q + A
 1.How do we assign a value to a variable?
 Ans: Assignment operator (=)
+
 2.How do we change the value of a variable?
 Ans: Reassignment operator (=)
+
 3.How do we assign an existing variable to a new variable?
 Ans: Assignment operator
+
 4.Remind me, what are declare, assign, and define?
 -declare -> let/const/Var e.g let catName = kitty
 -Assign -> gives value to a variable
 -Define ->Gives a meaning
+
 5. What is pseudocoding and why should you do it?
 Ans: fake coding in plain language that helps programmers develop algorithms
+
 6.What percentage of time should be spent thinking about how you're going to solve a problem vs actually typing in code to solve it?
 Ans: 90% thinking and 10% coding
 
@@ -66,23 +71,31 @@ Ans: 90% thinking and 10% coding
 
 //1. console.log(a __ b);
  console.log(a<b)
+
 //2. console.log(c __ d);
 console.log(c>d)
+
 //3. console.log('Name' __ 'Name');
 console.log('name'==='name')
+
 // // FOR THE NEXT TWO, USE ONLY && OR ||
 //4. console.log(true __ false);
 console.log(true || false)
+
 //5. console.log(false __ false __ false __ false __ false __ true);
 console.log(false && false && false && false && false || true)
+
 //6. console.log(false __ false)
 console.log(false === false) // i.e the word false is of equal value and equal type (===) to the word false
+
 //7. console.log(e ___ 'Kevin');
 console.log(e !== 'Kevin') //i,e the letter (e) is not of equal value or not equal type (symbolized by !==) to the string ('Kevin')
+
 //8. console.log(a __ b ___ c); // note: a < b < c is NOT CORRECT (and is not a valid JS expression, think about using other math operations)
 console.log(a + b === c) // i.e 4(a) + 53(b) = 57 which is of equal value and equal type ( symbolized by ===) to 57(c)
-//9. console.log(a __ a ___ d); // note: the answer is a simple arithmetic equation, not something "weird"
+
 console.log(a * a === d)
+
 //10. console.log(48 __ '48');
 console.log(48 == '48')
 
@@ -139,33 +152,34 @@ This is NO GOOD: for(i = 0; i < 100; i++) **/
 
 // A. The basics
 //1. Write a loop that will print out (i.e.console.logs) all the numbers from 0 to 10, inclusive
-  // for(let i = 0; i<=10;i++){
-  //    console.log(i)
-  //    }
+  for(let i = 0; i<=10;i++){
+     console.log(i)
+     }
   
 // 2.Write a loop that will print out (i.e.console.logs) all the numbers from 10 up to and including 400
-    // for(let i = 10; i<=400; i++){
-    //        console.log(i)
-    //     }
+    for(let i = 10; i<=400; i++){
+           console.log(i)
+        }
 // 3.Write a loop that will print out (i.e.console.logs) every third number starting with 12 and going no higher than 4000
   
-  // for(let i = 12; i<=4000; i+=3){
-  //   console.log(i)
-  // }
+  for(let i = 12; i<=4000; i+=3){
+    console.log(i)
+  }
   
 // B. Get even
 // 1.Print out (i.e.console.logs) the numbers that are within the range of 1 - 100
-// for(let i = 1; i <=100; i++){
-//    console.log(i)
-// }
+for(let i = 1; i <=100; i++){
+   console.log(i)
+}
+
 // 3.Adjust your code to add a message next to even numbers only that says: "<-- is an even number"
-// for(let i = 1; i <= 100; i++){
-//   if(i % 2 === 0){
-//     console.log(`${i} <-- is an even number `)
-//   }else{
-//     console.log(i)
-//   }
-// }
+for(let i = 1; i <= 100; i++){
+  if(i % 2 === 0){
+    console.log(`${i} <-- is an even number `)
+  }else{
+    console.log(i)
+  }
+}
 
 
 // C. Give me Five
@@ -173,13 +187,13 @@ This is NO GOOD: for(i = 0; i < 100; i++) **/
 // Example Output:
 // I found a 5. High five!
 // I found a 10. High five!
-// for(let i = 0; i <= 100; i++){
-//   if(i % 5 === 0){
-//     console.log(i + `I found a number.High five`)
-//    }else {
-//     console.log(i)
-//    }
-// }
+for(let i = 0; i <= 100; i++){
+  if(i % 5 === 0){
+    console.log(i + `I found a number.High five`)
+   }else {
+    console.log(i)
+   }
+}
 
 
 //1. Add to the code from above to print  (i.e.console.logs) out "I found a number. Three is a crowd" if the number is a multiple of three
@@ -190,21 +204,21 @@ This is NO GOOD: for(i = 0; i < 100; i++) **/
 // I found a 6. Three is a crowd
 // I found a 9. Three is a crowd
 // I found a 10. High five!
-// for(let i = 0; i <= 100; i++){
-//   if(i % 3 === 0){
-//     console.log(i + `  I found a number. Three is a crowd`)
-//   }
-// }
+for(let i = 0; i <= 100; i++){
+  if(i % 3 === 0){
+    console.log(i + `  I found a number. Three is a crowd`)
+  }
+}
 
 
 //1. For numbers divisible by both three and five, be sure your code prints (i.e.console.logs) both messages
 //NB: Numbers divisible by both 3 and 5 from 1 to 100 are;15,30,45,60,75 and 90 ( this should be your result in the terminal when you console.log)
-// let i
-// for(let i = 1; i<= 100; i++){
-//  if(i%3 === 0 && i%5 ===0){
-//   console.log(i)
-//  }
-// }
+let i
+for(let i = 1; i<= 100; i++){
+ if(i%3 === 0 && i%5 ===0){
+  console.log(i)
+ }
+}
 
 // D. Savings account
 // 1.Write code that will save the sum of all the numbers between 1 - 10 to a variable called bank_account.
@@ -258,6 +272,7 @@ console.log(randomThings)
 // 1.What would you write to access the 3rd element of the array?
 const ourClass = ["Salty", "Zoom", "Sardine", "Slack", "Github"]
 ourClass[3] //  Counting from zero(0), the 3rd element of the array is "Slack"
+
 // 2.Change the value of "Github" to "Octocat"
 ourClass[4] = "Octocat" //Github is on index number position 4
 
@@ -289,12 +304,12 @@ myArray.unshift("Bob Marley")  // The unshift() method adds new elements to the 
 myArray.pop("Money") // The pop() method removes (pops) the last element of an array.
 
 //   5. Reverse this array using Array.prototype.reverse(). Did you mutate the array? What does mutate mean? Did the .reverse()method return anything?
-// myArray.reverse()
-// myArray.prototype.reverse() 
-// console.log(myArray)
+myArray.reverse()
+myArray.prototype.reverse() 
+console.log(myArray)
 
-// ===> Yes the array was mutated.Mutations happen when we change a JavaScript object or array without creating a new variable or reassigning an existing one.
-//===> Yes The reverse() method reverses the order of the elements in an array.
+// Ans ===> Yes the array was mutated.Mutations happen when we change a JavaScript object or array without creating a new variable or reassigning an existing one.
+// Ans ===> Yes The reverse() method reverses the order of the elements in an array.
 
 
 
@@ -364,24 +379,31 @@ if(fingers < 5){
 // ];
 
 // 1.What's Kristyn wearing today? Using bracket notation to access items in kristynsCloset, log the sentence "Kristyn is rocking that " + the third item in Kristyn's closet + " today!" to the console.
-//****console.log(`Kristyn is rocking that $(kristynsCloset[2]) today!` )
+console.log(`Kristyn is rocking that $(kristynsCloset[2]) today!` )
+
 //2. Kristyn just bought some sweet shades! Add "raybans"to her closet after "yellow knit hat".
-     //*** */ kristynsCloset.splice(6,0,"raybans")
+  kristynsCloset.splice(6,0,"raybans")
+
 //3. Kristyn spilled coffee on her hat... modify this item to read "stained knit hat"instead of yellow.
-// kristynsCloset(5) = "stained knit hat"
-// console.log(kristynsCloset)
+kristynsCloset(5) = "stained knit hat"
+console.log(kristynsCloset)
+
 //4. Put together an outfit for Thom! Using bracket notation, access the first element in Thom's shirtsarray.
-// thomsCloset[0][0]
-// console.log(shirt)
+thomsCloset[0][0]
+console.log(shirt)
+
 // 5.In the same way, access one item from Thom's pants array.
-// let pants = thomsCloset[1][0]
+let pants = thomsCloset[1][0]
+
 // 6.Access one item from Thom's accessories array.
-// let accessories = thomsCloset[2][2]
+let accessories = thomsCloset[2][2]
+
 // 7.Log a sentence about what Thom's wearing. Example: "Thom is looking fierce in a grey button-up, jeans and wool scarf!"
-// console.log(`Thom is looking fierce in a ${shirt},${pants}, and ${accessories}`)
+console.log(`Thom is looking fierce in a ${shirt},${pants}, and ${accessories}`)
+
 //8. Get more specific about what kind of PJs Thom's wearing this winter. Modify the name of his PJ pants to Footie Pajamas.
-// thomsCloset[1][2] = " Footie Pajamas"
-// console.log(thomsCloset)
+thomsCloset[1][2] = " Footie Pajamas"
+console.log(thomsCloset)
 
 
 
@@ -394,7 +416,6 @@ if(fingers < 5){
 // Like so?
 // console.log(printGreeting("Slimer"));
 // => Hello there, Slimer!
-
 // You think you could? I think so too. Feel free to skip this problem, because you've already done it. If you've done the problem twice, read entire problems carefully before doing them from now on.
 
 
@@ -532,17 +553,17 @@ user.purchased.push("carbohydrate")
 user.purchased.push("peace of mind")
 user.purchased.push("Merino jodhpurs")
 console.log(user.purchased[user.purchased.length -  1])
-// console.log(user.purchased.push(["Merino jodhpurs"]))
+console.log(user.purchased.push(["Merino jodhpurs"]))
 
 
 // E. Object-within-object ( Nested objects)
 // Remember that you can add an object to an existing object in the same way that you can add any new property/value pair.
 // If we want to give our user object above, a friend with a name and age, we could write:
-// user.friend = {
-//     name: "Grace Hopper",
-//     age: 85
-// }
-//  console.log(user)
+user.friend = {
+    name: "Grace Hopper",
+    age: 85
+}
+ console.log(user)
 // When we console.log user, we would see the friend object added to our user object.
 
 // 1. Write a friend object into your user object and give the friend a name, age, location, and purchased array (empty for now)
@@ -553,41 +574,64 @@ user.friend = {
   purchased: []
 }
 
-// 2. Console.log just the friend's name
+// // 2. Console.log just the friend's name
 console.log(user.friend.name)
 
-// 3. Console.log just the friend's location
+// // 3. Console.log just the friend's location
 console.log(user.friend.location)
 
-// 4. CHANGE the friend's age to 55
+// // 4. CHANGE the friend's age to 55
 user.friend.age = 55
 console.log(user.friend.age)
 
 // 5. The friend has purchased "The One Ring". Use .push()to add "The One Ring" to the friend's purchased array.
 user.friend.purchased = ["The One Ring"]
-//console.log(user.friend.purchased)
+console.log(user.friend.purchased)
 
 //6. The friend has purchased "A latte". Use .push()to add "A latte" to the friend's purchased array.
 user.friend.purchased = ["A latte"]
-//console.log(user.friend.purchased)
+console.log(user.friend.purchased)
 
 //7. Console.log just "A latte" from the friend's purchasedarray.
 console.log(user.friend.purchased[user.friend.purchased.length -  1])
 
 // F. Loops
-// Write a for loop that iterates over the User's purchasedarray (NOT the friend's purchased array), and prints each element to the console.
-// Write a for loop that iterates over the Friend's purchasedarray, and prints each element to the console.
+// 1.Write a for loop that iterates over the User's purchased array (NOT the friend's purchased array), and prints each element to the console.
+//  Synthax is: for ( let variable in Object){
+//   //code to be executed
+//  }
+// The block of code inside of the for...in loop will be executed once for each property.
+const user = {
+  purchased : ["carbohydrate","peace of mind","Merino jodhpurs"]
+};
+for(let purchased in user){
+   console.log(user.purchased)
+}
+
+
+//2. Write a for loop that iterates over the Friend's purchased array, and prints each element to the console.
+
+let purchased = ["The One Ring","A latte"];
+for (let i = 0; i < purchased.length; i++){
+   console.log(purchased[i])
+}
 
 
 
 // G. Functions can operate on objects
-// Write a single function updateUserthat takes no parameters. When the function is run, it should:
-// it should increment the user's age by 1
-// make the user's name uppercase
-// The function does not need a returnstatement, it will merely modify the user object.
+// Write a single function updateUser that takes no parameters. When the function is run, it should:
+// 1. it should increment the user's age by 1
+// 2. make the user's name uppercase
+// The function does not need a return statement, it will merely modify the user object.
+const updateUser = () => {
+ user.age++
+ user.name = user.name.toupperCase()
+}
 
-// Write a function oldAndLoudthat performs the exact same tasks as updateUser, but instead of hard-coding it to only work on our userobject, make it take a parameter person, and have it modify the object that is passed in as an argument when the function is called. Call your oldAndLoudfunction with useras the argument.
-
-
-
-
+// 3. Write a function oldAndLoud that performs the exact same tasks as updateUser, but instead of hard-coding it to only work on our user object, make it take a parameter person, and have it modify the object that is passed in as an argument when the function is called. Call your oldAndLoud function with user as the argument.
+const oldAndLoud = (person) => {
+ person.age++
+person.name = person.name.toUpperCase()
+return person
+}
+console.log( oldAndLoud(user) )
